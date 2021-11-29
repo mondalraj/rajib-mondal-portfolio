@@ -2,10 +2,23 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
 
     const [menuToggle, setMenuToggle] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    const updateScreenWidth = () => {
+        setScreenWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateScreenWidth);
+        return () => {
+            window.removeEventListener('resize', updateScreenWidth)
+        }
+    }, [])
+
 
     const desktopNavbar = (
         <div className="bg-blue-300 sticky top-0 left-0 right-0">
-            <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16">
+            <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
                 <a href="/" className="navbar-logo">
                     <span>Rajib </span>
                     <span>Mondal</span>
@@ -24,12 +37,37 @@ const Navbar = () => {
     );
 
     const mobileNavbarItems = (
-        <div className="navbar-navItems mobile-navItems hidden flex-col z-10 bg-red-200 justify-center items-center p-5 space-y-5">
-            <a href="#about" >About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact" className="navbar-contactButton">
+        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 bg-red-200 justify-center items-center p-5 space-y-5">
+            <a href="#about" onClick={() => {
+                const mobileNavItems = document.querySelector('.mobile-navItems');
+                mobileNavItems.classList.add("hidden")
+                mobileNavItems.classList.remove("flex")
+                setMenuToggle(false)
+            }}>About</a>
+            <a href="#skills" onClick={() => {
+                const mobileNavItems = document.querySelector('.mobile-navItems');
+                mobileNavItems.classList.add("hidden")
+                mobileNavItems.classList.remove("flex")
+                setMenuToggle(false)
+            }}>Skills</a>
+            <a href="#projects" onClick={() => {
+                const mobileNavItems = document.querySelector('.mobile-navItems');
+                mobileNavItems.classList.add("hidden")
+                mobileNavItems.classList.remove("flex")
+                setMenuToggle(false)
+            }}>Projects</a>
+            <a href="#experience" onClick={() => {
+                const mobileNavItems = document.querySelector('.mobile-navItems');
+                mobileNavItems.classList.add("hidden")
+                mobileNavItems.classList.remove("flex")
+                setMenuToggle(false)
+            }}>Experience</a>
+            <a href="#contact" onClick={() => {
+                const mobileNavItems = document.querySelector('.mobile-navItems');
+                mobileNavItems.classList.add("hidden")
+                mobileNavItems.classList.remove("flex")
+                setMenuToggle(false)
+            }} className="navbar-contactButton">
                 Contact
             </a>
         </div>
@@ -38,7 +76,7 @@ const Navbar = () => {
     const mobileNavbar = (
         <>
             <div className="bg-blue-300 sticky top-0 left-0 right-0">
-                <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16">
+                <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
                     <a href="/" className="navbar-logo">
                         <span>Rajib </span>
                         <span>Mondal</span>
@@ -64,18 +102,6 @@ const Navbar = () => {
         </>
     );
 
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    const updateScreenWidth = () => {
-        setScreenWidth(window.innerWidth);
-    }
-
-    useEffect(() => {
-        window.addEventListener('resize', updateScreenWidth);
-        return () => {
-            window.removeEventListener('resize', updateScreenWidth)
-        }
-    }, [])
 
     if (screenWidth > 768) {
         return desktopNavbar;
