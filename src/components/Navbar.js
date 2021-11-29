@@ -17,18 +17,18 @@ const Navbar = () => {
 
 
     const desktopNavbar = (
-        <div className="bg-blue-300 sticky top-0 left-0 right-0">
+        <div className="sticky top-0 left-0 right-0 z-10" style={{ backgroundColor: "#171717" }}>
             <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
-                <a href="/" className="navbar-logo">
-                    <span>Rajib </span>
+                <a href="/" className="navbar-logo text-2xl font-semibold tracking-wider">
+                    <span className="text-yellow-400">Rajib </span>
                     <span>Mondal</span>
                 </a>
-                <div className="navbar-navItems space-x-10">
-                    <a href="#about" >About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#contact" className="navbar-contactButton">
+                <div className="navbar-navItems space-x-8">
+                    <a href="#about" className="text-lg tracking-wider">About</a>
+                    <a href="#skills" className="text-lg tracking-wider">Skills</a>
+                    <a href="#projects" className="text-lg tracking-wider">Projects</a>
+                    <a href="#experience" className="text-lg tracking-wider">Experience</a>
+                    <a href="#contact" className="navbar-contactButton text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded">
                         Contact
                     </a>
                 </div>
@@ -37,26 +37,26 @@ const Navbar = () => {
     );
 
     const mobileNavbarItems = (
-        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 bg-red-200 justify-center items-center p-5 space-y-5">
-            <a href="#about" onClick={() => {
+        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 justify-center items-center p-5 space-y-7 text-white" style={{ backgroundColor: "#171717" }}>
+            <a href="#about" className="text-lg tracking-wider" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>About</a>
-            <a href="#skills" onClick={() => {
+            <a href="#skills" className="text-lg tracking-wider" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>Skills</a>
-            <a href="#projects" onClick={() => {
+            <a href="#projects" className="text-lg tracking-wider" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>Projects</a>
-            <a href="#experience" onClick={() => {
+            <a href="#experience" className="text-lg tracking-wider" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
@@ -67,7 +67,7 @@ const Navbar = () => {
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
-            }} className="navbar-contactButton">
+            }} className="navbar-contactButton w-full text-lg text-center font-semibold bg-gray-300 py-1 text-black rounded">
                 Contact
             </a>
         </div>
@@ -75,10 +75,10 @@ const Navbar = () => {
 
     const mobileNavbar = (
         <>
-            <div className="bg-blue-300 sticky top-0 left-0 right-0">
+            <div className="sticky top-0 left-0 right-0 z-10" style={{ backgroundColor: "#171717" }}>
                 <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
-                    <a href="/" className="navbar-logo">
-                        <span>Rajib </span>
+                    <a href="/" className="navbar-logo text-2xl font-semibold tracking-wider">
+                        <span className="text-yellow-400">Rajib </span>
                         <span>Mondal</span>
                     </a>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 cursor-pointer menu-icon" onClick={() => {
