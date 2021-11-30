@@ -37,7 +37,7 @@ const Navbar = () => {
     );
 
     const mobileNavbarItems = (
-        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 justify-center items-center p-5 space-y-7 text-white" style={{ backgroundColor: "#171717" }}>
+        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 justify-center items-center p-5 space-y-7 text-white transition-all" style={{ backgroundColor: "#171717" }}>
             <a href="#about" className="text-lg tracking-wider" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")

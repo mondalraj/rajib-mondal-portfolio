@@ -12,14 +12,15 @@ function Header() {
                         <a href="https://github.com/mondalraj" style={styles.headerButton} className="flex items-center rounded"><img className="h-6 pr-3" src="https://img.icons8.com/material-outlined/50/ffffff/github.png" />Github</a>
                     </div>
                 </div>
-                <div className="header-image w-8/12 sm:w-3/5 md:w-full">
+                <div className="header-image -mt-3 w-9/12 sm:w-3/5 md:w-full">
                     <img style={{ width: "800px" }} src="heroImage.png" alt="Image of Rajib Mondal" />
                 </div>
 
             </div>
-            <svg className="w-full text-center h-10 z-0 animate-bounce text-white" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <div className="flex justify-center items-center animate-bounce mt-3">
+                <img className="" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/ffffff/external-down-arrows-those-icons-fill-those-icons-1.png" />
+            </div>
+
         </>
     )
 }
