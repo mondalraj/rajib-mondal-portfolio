@@ -1,8 +1,12 @@
 {
-  "name": "rajib-mondal-dev-portfolio",
-  "homepage": "https://mondalraj.github.io/rajib-mondal-dev-portfolio",
+  "name": "rajib-mondal-portfolio",
+  "homepage": "https://mondalraj.github.io/rajib-mondal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mondalraj/rajib-mondal-portfolio.git"
+  },
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@heroicons/react": "^1.0.5",
