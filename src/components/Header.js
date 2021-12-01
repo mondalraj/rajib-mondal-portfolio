@@ -2,7 +2,7 @@
 function Header() {
     return (
         <>
-            <div className="p-5 header-container max-w-screen-xl mx-auto flex justify-center items-center -m-20 md:-mt-16 h-screen max-h-screen text-white flex-col-reverse md:flex-row">
+            <div className="p-5 header-container max-w-screen-xl mx-auto flex justify-center items-center -m-20 md:-mt-16 min-h-screen text-white flex-col-reverse md:flex-row">
                 <div className="header-content md:pl-10 flex flex-col items-center md:items-start space-y-5">
                     <div className="text-xl text-black bg-yellow-400 w-max py-0.5 px-6 rounded">Web Developer</div>
                     <div className="text-3xl md:text-5xl font-semibold">Also a Software <span className="text-yellow-400">Engineer</span></div>

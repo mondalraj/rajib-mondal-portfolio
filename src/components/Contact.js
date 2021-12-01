@@ -8,13 +8,13 @@ function Contact() {
                     <p>Fill out the form below to contact me.</p>
                 </div>
                 <div className="contact-form relative -bottom-10 rounded p-5" style={{ backgroundColor: "#DBDBDB" }}>
-                    <form action="/">
+                    <form action="mailto:mondalrajib2002@gmail.com" method="post" enctype="text/plain">
                         <label className="text-md text-black " htmlFor="email">Mail <br /></label>
-                        <input className="w-full rounded p-2 mt-1 mb-3 text-gray-800" type="email" name="email" id="email" placeholder="Type your Email" />
+                        <input className="w-full rounded focus:outline-none p-2 mt-1 mb-3 text-gray-800" type="email" name="email" id="email" placeholder="Type your Email" />
                         <br />
                         <label className="text-md text-black " htmlFor="message">Message <br /></label>
-                        <textarea className="w-full rounded p-2 mt-1 text-gray-800" name="message" id="message" cols="30" rows="10" placeholder="Type your Message"></textarea>
-                        <input className="bg-yellow-400 mt-2 w-full rounded text-black p-2 px-5" type="submit" value="Send Message" />
+                        <textarea className="focus:outline-none w-full rounded p-2 mt-1 text-gray-800" name="message" id="message" cols="30" rows="10" placeholder="Type your Message"></textarea>
+                        <input className="bg-yellow-400 cursor-pointer mt-2 w-full rounded text-black p-2 px-5" type="submit" value="Send Message" />
                     </form>
                 </div>
             </div>
