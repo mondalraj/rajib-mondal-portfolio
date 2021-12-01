@@ -9,24 +9,24 @@ function Skills() {
             power: 70
         },
         {
-            name: "React js",
+            name: "React.js",
             power: 90
         },
         {
-            name: "Next js",
+            name: "Next.js",
             power: 80
         },
         {
-            name: "Node js",
+            name: "Node.js",
             power: 70
         },
         {
-            name: "Express js",
+            name: "Express.js",
             power: 60
         },
         {
             name: "Mongo DB",
-            power: 75
+            power: 65
         },
     ]
     const additionalSkills = [
@@ -64,7 +64,7 @@ function Skills() {
             <div className="text-xl text-yellow-400 tracking-wider mb-4">My Skills</div>
             <div className="skills-content flex flex-col justify-center items-center w-full gap-4 md:flex-row md:gap-10">
                 <div className="core-technical-skills w-full p-5 rounded" style={{ backgroundColor: "#171717" }}>
-                    <div className="text-center text-lg tracking-wide">Core Techical Skills</div>
+                    <div className="text-center text-lg tracking-wide font-semibold">Core Techical Skills</div>
 
                     {coreTechnicalSkills.map((skill) => {
                         return (
@@ -73,7 +73,7 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-1.5 rounded bg-black">
+                                <div className="skill-bar w-full h-1.5 rounded bg-white">
                                     <div className="skill-percent h-full bg-yellow-400 rounded" style={{ width: `${skill.power}%` }}></div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ function Skills() {
 
                 </div>
                 <div className="additional-skills w-full p-5 rounded" style={{ backgroundColor: "#171717" }}>
-                    <div className="text-center text-lg tracking-wide">Additional Skills</div>
+                    <div className="text-center text-lg tracking-wide font-semibold">Additional Skills</div>
 
                     {additionalSkills.map((skill) => {
                         return (
@@ -91,7 +91,7 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-1.5 rounded bg-black">
+                                <div className="skill-bar w-full h-1.5 rounded bg-white">
                                     <div className="skill-percent h-full bg-yellow-400 rounded" style={{ width: `${skill.power}%` }}></div>
                                 </div>
                             </div>
