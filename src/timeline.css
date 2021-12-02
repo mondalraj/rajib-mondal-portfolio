@@ -1,0 +1,56 @@
+.timeline-container::after {
+  background-color: #dbdbdb;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.timeline-item {
+  background-color: #171717;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-self: flex-start;
+  padding: 10px;
+  margin: 10px 0;
+  width: 70%;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.timeline-name {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 2px 2px;
+}
+
+.timeline-company {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 2px 2px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline-item {
+    width: 47%;
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #dbdbdb;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8%;
+  }
+  .timeline-item:nth-child(odd) > .circle {
+    left: -8%;
+  }
+}

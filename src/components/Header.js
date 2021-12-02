@@ -8,8 +8,8 @@ function Header() {
                     <div className="text-3xl md:text-5xl font-semibold">Also a Software <span className="text-yellow-400">Engineer</span></div>
                     <div className="text-lg md:text-xl w-5/6 tracking-wider leading-7 md:pt-5 pb-2 text-justify md:text-left">I can design aesthetic websites, write easy to understand code, optimize the code and sometimes solve DSA problems.</div>
                     <div className="flex">
-                        <a href="https://www.linkedin.com/in/dev-rajib-mondal/" style={styles.headerButton} className="flex items-center mr-8 rounded"><img className="h-6 pr-3" src="https://img.icons8.com/ios-glyphs/50/ffffff/linkedin-circled.png" />LinkedIn</a>
-                        <a href="https://github.com/mondalraj" style={styles.headerButton} className="flex items-center rounded"><img className="h-6 pr-3" src="https://img.icons8.com/material-outlined/50/ffffff/github.png" />Github</a>
+                        <a href="https://www.linkedin.com/in/dev-rajib-mondal/" target="_blank" style={styles.headerButton} className="flex items-center mr-8 rounded"><img className="h-6 pr-3" src="https://img.icons8.com/ios-glyphs/50/ffffff/linkedin-circled.png" />LinkedIn</a>
+                        <a href="https://github.com/mondalraj" target="_blank" style={styles.headerButton} className="flex items-center rounded"><img className="h-6 pr-3" src="https://img.icons8.com/material-outlined/50/ffffff/github.png" />Github</a>
                     </div>
                 </div>
                 <div className="header-image -mt-3 w-9/12 sm:w-3/5 md:w-full">

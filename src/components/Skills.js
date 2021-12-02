@@ -18,15 +18,15 @@ function Skills() {
         },
         {
             name: "Node.js",
-            power: 70
-        },
-        {
-            name: "Express.js",
             power: 60
         },
         {
+            name: "Express.js",
+            power: 50
+        },
+        {
             name: "Mongo DB",
-            power: 65
+            power: 55
         },
     ]
     const additionalSkills = [
