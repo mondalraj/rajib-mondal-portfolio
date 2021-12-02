@@ -2,7 +2,7 @@ function Contact() {
     return (
         <div id="contact" className="contact-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white p-5 pt-20">
             <div className="get-in-touch w-full p-5 rounded-md md:max-w-3xl" style={{ backgroundColor: "#171717" }}>
-                <div className="text-2xl md:text-3xl font-semibold tracking-wide pb-4">Get In Touch!</div>
+                <div className="text-yellow-400 text-2xl md:text-3xl font-semibold tracking-wide pb-4">Get In Touch!</div>
                 <div className="text-lg">
                     <p>Have an enquiry or feedback for me?</p>
                     <p>Fill out the form below to contact me.</p>

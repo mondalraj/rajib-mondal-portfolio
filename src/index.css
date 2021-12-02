@@ -5,9 +5,11 @@
 html {
   background-color: #252525;
   scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  letter-spacing: 1px;
 }

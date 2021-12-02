@@ -1,0 +1,27 @@
+.typewriter {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+.typewriter::before,
+.typewriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+}
+
+.typewriter::before {
+  background: #252525;
+  animation: typewriter 2.5s ease-out forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}

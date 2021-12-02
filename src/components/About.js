@@ -22,7 +22,7 @@ function About() {
             <div className="description flex flex-col items-center md:items-start space-y-5">
                 <div className="text-xl text-yellow-400">About Me</div>
                 <div className="text-3xl font-semibold tracking-wide">Hi! I am Rajib Mondal</div>
-                <div className=" text-lg md:leading-7">
+                <div className="text-justify text-lg md:leading-7">
                     <p>I am a Full Stack Developer and currently pursuing my Bachelor's of Technology Degree from Dr. Akhilesh Das Gupta Institute of Technology And Management, Delhi.</p>
                     <p>I have participated and won in a lot of Open Source Programs, Hackathons, and have built responsive and fast web apps.</p>
                     <p>I am very passionate learner and love to implement my learnings in my projects.</p>
