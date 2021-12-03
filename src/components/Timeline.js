@@ -1,5 +1,5 @@
 import TimelineItem from "./TimelineItem"
-import '../timeline.css'
+import '../styles/timeline.css'
 
 function Timeline() {
 
@@ -11,7 +11,7 @@ function Timeline() {
             date: "Oct'2020 - Feb'2021"
         },
         {
-            name: "Open Source Contribution",
+            name: "Open Source Contributor",
             company: "GirlScript Summer of Code",
             description: "I Have paricipated in GSSOC'21 and it was my first open source experience, I have created a lot of connections there, meet a lot of like minded individuals.",
             date: "Mar'2021 - May'2021"
@@ -20,9 +20,10 @@ function Timeline() {
             name: "GDSC Core Team Member",
             company: "Google Student Developer Club' ADGITM",
             description: "Based on my Front-End skills I was selected for the Core technical Team where we build projects with other members, organise events on regular basis to increase the coding culture of our college.",
+            date: "Sept'2021 - Present"
         },
         {
-            name: "Hacktoberfest Contribution",
+            name: "Hacktoberfest Contributor",
             company: "Digital Ocean",
             description: "I have successfully merged 10+ Pull Requests and have contributed in 5 projects where I have tried to make their product more optized and useful.",
             date: "Oct'2021",
