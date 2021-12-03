@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/rajib-mondal-portfolio/static/css/main.2a3baae6.chunk.css",
-    "main.js": "/rajib-mondal-portfolio/static/js/main.1fdb5df1.chunk.js",
-    "main.js.map": "/rajib-mondal-portfolio/static/js/main.1fdb5df1.chunk.js.map",
+    "main.css": "/rajib-mondal-portfolio/static/css/main.8a111793.chunk.css",
+    "main.js": "/rajib-mondal-portfolio/static/js/main.6591b1fd.chunk.js",
+    "main.js.map": "/rajib-mondal-portfolio/static/js/main.6591b1fd.chunk.js.map",
     "runtime-main.js": "/rajib-mondal-portfolio/static/js/runtime-main.d268fc3c.js",
     "runtime-main.js.map": "/rajib-mondal-portfolio/static/js/runtime-main.d268fc3c.js.map",
     "static/js/2.cbfc7743.chunk.js": "/rajib-mondal-portfolio/static/js/2.cbfc7743.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.f55e7e45.chunk.js": "/rajib-mondal-portfolio/static/js/3.f55e7e45.chunk.js",
     "static/js/3.f55e7e45.chunk.js.map": "/rajib-mondal-portfolio/static/js/3.f55e7e45.chunk.js.map",
     "index.html": "/rajib-mondal-portfolio/index.html",
-    "static/css/main.2a3baae6.chunk.css.map": "/rajib-mondal-portfolio/static/css/main.2a3baae6.chunk.css.map",
+    "static/css/main.8a111793.chunk.css.map": "/rajib-mondal-portfolio/static/css/main.8a111793.chunk.css.map",
     "static/js/2.cbfc7743.chunk.js.LICENSE.txt": "/rajib-mondal-portfolio/static/js/2.cbfc7743.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d268fc3c.js",
     "static/js/2.cbfc7743.chunk.js",
-    "static/css/main.2a3baae6.chunk.css",
-    "static/js/main.1fdb5df1.chunk.js"
+    "static/css/main.8a111793.chunk.css",
+    "static/js/main.6591b1fd.chunk.js"
   ]
 }
