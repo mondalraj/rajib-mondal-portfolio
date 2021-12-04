@@ -2,7 +2,7 @@ import '../styles/header.css'
 function Header() {
     return (
         <>
-            <div className="p-5 header-container max-w-screen-xl mx-auto flex justify-center items-center -m-20 md:-mt-16 min-h-screen text-white flex-col-reverse md:flex-row">
+            <div className="container p-5 header-container max-w-screen-xl mx-auto flex justify-center items-center -m-20 md:-mt-16 min-h-screen text-white flex-col-reverse md:flex-row">
                 <div className="header-content md:pl-10 flex flex-col items-center md:items-start space-y-5">
                     <div className="text-xl text-black bg-yellow-400 w-max py-0.5 px-6 rounded">Web Developer</div>
                     <div className="flex md:flex-col lg:flex-row">

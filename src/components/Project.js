@@ -9,7 +9,7 @@ function Project() {
     const projectList = [
         {
             name: "Name",
-            tags: ["HTML", "CSS", "JavaScript"],
+            tags: ["HTML", "CSS", "JavaScript", "Node js", "Express js"],
             level: "Beginner",
             links: {
                 github: "https://github.com/mondalraj",
@@ -75,16 +75,16 @@ function Project() {
         },
     ]
     return (
-        <div id="projects" className="project-container max-w-screen-xl mx-auto flex flex-col justify-center items-center min-h-screen text-white p-5 pt-20">
+        <div id="projects" className="container project-container max-w-screen-xl mx-auto flex flex-col justify-center items-center min-h-screen text-white p-5 pt-20">
             <div className="text-xl text-yellow-400 mb-8">My Projects</div>
-            <div className="project-filter flex justify-center items-center space-x-5 text-black text-lg mb-5">
+            <div className="project-filter flex flex-wrap justify-center items-center gap-3 text-black text-lg mb-5">
                 <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) =>
                     setProjectType("mini")
                 }>Mini</div>
                 <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) => setProjectType("frontend")}>Front-End</div>
                 <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) => setProjectType("fullstack")}>Full Stack</div>
             </div>
-            <div className="w-full flex flex-col sm:flex-row gap-3 justify-center items-center flex-wrap">
+            <div className="w-full flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
                 {projectList.filter((data) => {
                     return data.type == projectType
                 }).map((data, index) => {

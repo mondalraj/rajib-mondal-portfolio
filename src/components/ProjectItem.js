@@ -9,10 +9,10 @@ const ProjectItem = ({ data }) => {
                 </div>
                 <div className="absolute top-0 right-0 p-1 bg-yellow-400 text-black rounded">{data.level}</div>
             </div>
-            <div className="text-yellow-400 text-lg font-semibold my-1">{data.name}</div>
-            <div className="tags flex flex-wrap space-x-2">
+            <div className="text-yellow-400 text-lg font-semibold  my-1">{data.name}</div>
+            <div className="tags flex flex-wrap gap-2">
                 {data.tags.map((tag) => {
-                    return <div className="bg-gray-200 text-black py-0.5 px-1.5 rounded">{tag}</div>
+                    return <div className="bg-gray-200 w-max text-black font-semibold text-md py-0.5 px-1.5 rounded">{tag}</div>
                 })}
             </div>
         </div>

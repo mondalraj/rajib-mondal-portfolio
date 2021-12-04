@@ -1,0 +1,8 @@
+.navbar-contactButton:hover {
+  background: #f1c21b;
+  color: black !important;
+}
+.navbar-navItems > a:hover {
+  color: #f1c21b;
+  transition: all 0.3s ease;
+}

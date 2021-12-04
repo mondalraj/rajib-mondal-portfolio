@@ -1,5 +1,32 @@
 import { useState, useEffect } from 'react';
+import '../styles/navbar.css'
+
 const Navbar = () => {
+
+    const [about, setAbout] = useState('text-white');
+    const [skill, setSkill] = useState('text-white');
+    const [project, setProject] = useState('text-white');
+    const [experience, setExperience] = useState('text-white');
+    const [contact, setContact] = useState('bg-gray-300');
+
+    const changeNavColor = (item) => {
+        setAbout('text-white')
+        setSkill('text-white')
+        setProject('text-white')
+        setExperience('text-white')
+        setContact('bg-gray-300')
+        if (item == 1) {
+            setAbout('text-yellow-400')
+        } else if (item == 2) {
+            setSkill('text-yellow-400')
+        } else if (item == 3) {
+            setProject('text-yellow-400')
+        } else if (item == 4) {
+            setExperience('text-yellow-400')
+        } else if (item == 5) {
+            setContact('bg-yellow-400')
+        }
+    }
 
     const [menuToggle, setMenuToggle] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -24,39 +51,39 @@ const Navbar = () => {
                     <span>Mondal</span>
                 </a>
                 <div className="navbar-navItems space-x-8">
-                    <a href="#about" className="text-lg tracking-wider">About</a>
-                    <a href="#skills" className="text-lg tracking-wider">Skills</a>
-                    <a href="#projects" className="text-lg tracking-wider">Projects</a>
-                    <a href="#experience" className="text-lg tracking-wider">Experience</a>
-                    <a href="#contact" className="navbar-contactButton text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded">
-                        Contact
+                    <a href="#about" className={about + " text-lg tracking-wider"} onClick={() => changeNavColor(1)} >About</a>
+                    <a href="#skills" className={skill + " text-lg tracking-wider"} onClick={() => changeNavColor(2)} >Skills</a>
+                    <a href="#projects" className={project + " text-lg tracking-wider"} onClick={() => changeNavColor(3)} >Projects</a>
+                    <a href="#experience" className={experience + "  text-lg tracking-wider"} onClick={() => changeNavColor(4)} >Experience</a>
+                    <a href="#contact" className={contact + " navbar-contactButton text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded"} onClick={()=> changeNavColor(5)}>
+                      Contact
                     </a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 
     const mobileNavbarItems = (
-        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 hidden flex-col z-10 justify-center items-center p-5 space-y-7 text-white transition-all" style={{ backgroundColor: "#171717" }}>
-            <a href="#about" className="text-lg tracking-wider" onClick={() => {
+        <div className="navbar-navItems mobile-navItems sticky left-0 right-0 top-16 text-center hidden flex-col z-10 justify-center items-center min-w-full p-5 space-y-7 text-white transition-all" style={{ backgroundColor: "#171717" }}>
+            <a href="#about" className="text-lg tracking-wider w-full" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>About</a>
-            <a href="#skills" className="text-lg tracking-wider" onClick={() => {
+            <a href="#skills" className="text-lg tracking-wider w-full" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>Skills</a>
-            <a href="#projects" className="text-lg tracking-wider" onClick={() => {
+            <a href="#projects" className="text-lg tracking-wider w-full" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")
                 setMenuToggle(false)
             }}>Projects</a>
-            <a href="#experience" className="text-lg tracking-wider" onClick={() => {
+            <a href="#experience" className="text-lg tracking-wider w-full" onClick={() => {
                 const mobileNavItems = document.querySelector('.mobile-navItems');
                 mobileNavItems.classList.add("hidden")
                 mobileNavItems.classList.remove("flex")

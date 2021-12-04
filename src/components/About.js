@@ -1,6 +1,6 @@
 function About() {
     return (
-        <div id="about" className="about-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white flex-col-reverse p-5 pt-20 md:flex-row md:gap-10 md:p-10">
+        <div id="about" className="container about-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white flex-col-reverse p-5 pt-20 md:flex-row md:gap-10 md:p-10">
             <div className="service-tags w-full flex flex-col gap-2 py-6">
                 <div className="flex flex-col justify-center items-center w-full h-20 rounded" style={{ backgroundColor: "#171717" }}>
                     <div className="text-xl font-semibold tracking-wide text-yellow-400">Design</div>

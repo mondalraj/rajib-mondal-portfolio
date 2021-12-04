@@ -1,3 +1,6 @@
+import React, { useRef } from 'react'
+import '../styles/skills.css'
+
 function Skills() {
     const coreTechnicalSkills = [
         {
@@ -59,8 +62,10 @@ function Skills() {
             power: 80
         }
     ]
+
+    
     return (
-        <div id="skills" className="max-w-screen-xl mx-auto min-h-screen text-white p-5 pt-20 flex justify-center items-center flex-col md:gap-10 md:p-10">
+        <div id="skills"className="container max-w-screen-xl mx-auto min-h-screen text-white p-5 pt-20 flex justify-center items-center flex-col md:gap-10 md:p-10">
             <div className="text-xl text-yellow-400 tracking-wider mb-4">My Skills</div>
             <div className="skills-content flex flex-col justify-center items-center w-full gap-4 md:flex-row md:gap-10">
                 <div className="core-technical-skills w-full p-5 rounded" style={{ backgroundColor: "#171717" }}>
@@ -73,8 +78,11 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-1.5 rounded bg-white">
-                                    <div className="skill-percent h-full bg-yellow-400 rounded" style={{ width: `${skill.power}%` }}></div>
+                                <div className="skill-bar w-full h-2 rounded bg-white">
+
+
+                                    <div className="skill-percent h-full bg-yellow-400 rounded skillsBar-animate"
+                                        style={{ maxWidth: `${skill.power}%` }}></div>
                                 </div>
                             </div>
                         )
@@ -91,8 +99,10 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-1.5 rounded bg-white">
-                                    <div className="skill-percent h-full bg-yellow-400 rounded" style={{ width: `${skill.power}%` }}></div>
+                                <div className="skill-bar w-full h-2 rounded bg-white">
+                                    <div className="skill-percent h-full bg-yellow-400 rounded skillsBar-animate" style={{
+                                        maxWidth: `${skill.power}%`
+                                    }}></div>
                                 </div>
                             </div>
                         )
@@ -101,7 +111,7 @@ function Skills() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
