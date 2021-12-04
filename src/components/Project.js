@@ -5,6 +5,9 @@ import ProjectItem from "./ProjectItem"
 function Project() {
 
     const [projectType, setProjectType] = useState("mini");
+    const [miniSeleted, setMiniSelected] = useState("bg-yellow-400")
+    const [frontendSeleted, setFrontendSelected] = useState("bg-gray-200")
+    const [fullstackSeleted, setFullstackSelected] = useState("bg-gray-200")
 
     const projectList = [
         {
@@ -78,11 +81,25 @@ function Project() {
         <div id="projects" className="container project-container max-w-screen-xl mx-auto flex flex-col justify-center items-center min-h-screen text-white p-5 pt-20">
             <div className="text-xl text-yellow-400 mb-8">My Projects</div>
             <div className="project-filter flex flex-wrap justify-center items-center gap-3 text-black text-lg mb-5">
-                <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) =>
+                <div className={miniSeleted + " py-2 px-5 rounded font-semibold cursor-pointer"} onClick={(e) => {
                     setProjectType("mini")
+                    setFrontendSelected("bg-gray-200")
+                    setFullstackSelected("bg-gray-200")
+                    setMiniSelected("bg-yellow-400")
+                }
                 }>Mini</div>
-                <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) => setProjectType("frontend")}>Front-End</div>
-                <div className="bg-gray-200 py-2 px-5 rounded font-semibold cursor-pointer" onClick={(e) => setProjectType("fullstack")}>Full Stack</div>
+                <div className={frontendSeleted + " py-2 px-5 rounded font-semibold cursor-pointer"} onClick={(e) => {
+                    setProjectType("frontend")
+                    setFrontendSelected("bg-yellow-400")
+                    setFullstackSelected("bg-gray-200")
+                    setMiniSelected("bg-gray-200")
+                }}>Front-End</div>
+                <div className={fullstackSeleted + " py-2 px-5 rounded font-semibold cursor-pointer"} onClick={(e) => {
+                    setProjectType("fullstack")
+                    setFrontendSelected("bg-gray-200")
+                    setFullstackSelected("bg-yellow-400")
+                    setMiniSelected("bg-gray-200")
+                }}>Full Stack</div>
             </div>
             <div className="w-full flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
                 {projectList.filter((data) => {

@@ -54,3 +54,9 @@
     left: -8%;
   }
 }
+
+.timeline-item {
+  box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
+}

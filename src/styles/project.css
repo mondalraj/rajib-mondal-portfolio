@@ -13,6 +13,13 @@
 }
 
 .project-filter > div:hover {
-  background: #f1c21b;
+  background: #ffdc5d;
   transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px 2px rgba(78, 78, 78, 0.75);
+  -webkit-box-shadow: 2px 2px 10px 2px rgba(78, 78, 78, 0.75);
+  -moz-box-shadow: 2px 2px 10px 2px rgba(78, 78, 78, 0.75);
 }

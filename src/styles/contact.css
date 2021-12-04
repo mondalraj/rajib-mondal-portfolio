@@ -1,0 +1,18 @@
+.contactForm-input:focus {
+  /* outline: 1px solid #585858 !important; */
+  outline: none;
+  box-shadow: 2px 3px 13px -1px rgba(64, 64, 64, 0.75);
+  -webkit-box-shadow: 2px 3px 13px -1px rgba(64, 64, 64, 0.75);
+  -moz-box-shadow: 2px 3px 13px -1px rgba(64, 64, 64, 0.75);
+}
+
+.contactForm-submit {
+  transition: all 0.2s ease;
+}
+
+.contactForm-submit:hover {
+  background-color: rgb(252, 197, 48);
+  box-shadow: 2px 2px 8px -1px rgba(64, 64, 64, 0.75);
+  -webkit-box-shadow: 2px 2px 8px -1px rgba(64, 64, 64, 0.75);
+  -moz-box-shadow: 2px 2px 8px -1px rgba(64, 64, 64, 0.75);
+}

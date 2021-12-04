@@ -4,5 +4,6 @@
 }
 .navbar-navItems > a:hover {
   color: #f1c21b;
+  font-weight: bold;
   transition: all 0.3s ease;
 }

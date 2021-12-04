@@ -1,5 +1,6 @@
 {
   "name": "rajib-mondal-portfolio",
+  "homepage": "https://mondalraj.github.io/rajib-mondal-portfolio",
   "version": "0.1.0",
   "private": true,
   "repository": {
@@ -12,6 +13,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
