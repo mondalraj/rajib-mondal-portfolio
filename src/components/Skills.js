@@ -63,10 +63,10 @@ function Skills() {
         }
     ]
 
-    
+
     return (
-        <div id="skills"className="container max-w-screen-xl mx-auto min-h-screen text-white p-5 pt-20 flex justify-center items-center flex-col md:gap-10 md:p-10">
-            <div className="text-xl text-yellow-400 tracking-wider mb-4">My Skills</div>
+        <div id="skills" className="container max-w-screen-xl mx-auto min-h-screen text-white p-5 pt-20 flex justify-center items-center flex-col md:gap-10 md:p-10">
+            <div className="text-xl text-yellow-400 tracking-wider mb-4 animate-pulse">My Skills</div>
             <div className="skills-content flex flex-col justify-center items-center w-full gap-4 md:flex-row md:gap-10">
                 <div className="core-technical-skills w-full p-5 rounded" style={{ backgroundColor: "#171717" }}>
                     <div className="text-center text-lg tracking-wide font-semibold">Core Techical Skills</div>
@@ -78,7 +78,7 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-2 rounded bg-white">
+                                <div className="skill-bar w-full h-2.5 rounded bg-white">
 
 
                                     <div className="skill-percent h-full bg-yellow-400 rounded skillsBar-animate"
@@ -99,7 +99,7 @@ function Skills() {
                                     <div>{skill.name}</div>
                                     <div>{skill.power}%</div>
                                 </div>
-                                <div className="skill-bar w-full h-2 rounded bg-white">
+                                <div className="skill-bar w-full h-2.5 rounded bg-white">
                                     <div className="skill-percent h-full bg-yellow-400 rounded skillsBar-animate" style={{
                                         maxWidth: `${skill.power}%`
                                     }}></div>

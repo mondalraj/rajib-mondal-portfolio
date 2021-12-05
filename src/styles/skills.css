@@ -1,4 +1,4 @@
-.skillsBar-animate{
+.skillsBar-animate {
   animation: skillProgress 2.5s ease-in forwards;
 }
 
@@ -9,4 +9,11 @@
   to {
     width: 100%;
   }
+}
+
+.core-technical-skills,
+.additional-skills {
+  box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 13px -1px rgba(0, 0, 0, 0.75);
 }

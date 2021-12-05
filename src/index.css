@@ -14,3 +14,30 @@ body {
   letter-spacing: 1px;
 }
 
+/* scroll bar design begins */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+  box-shadow: inset 0 0 5px rgb(181, 181, 181);
+
+  padding: 0 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 206, 206);
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: rgb(51, 51, 51);
+} */
+
+/* Scroll bar design finished */

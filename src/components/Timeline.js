@@ -36,7 +36,7 @@ function Timeline() {
 
     return (
         <>
-            <div id="experience" className="pt-20 text-xl text-yellow-400 mb-5 z-5 text-center">My Expertise</div>
+            <div id="experience" className="pt-20 text-xl text-yellow-400 mb-5 z-5 text-center animate-pulse">My Expertise</div>
             <div className="container timeline-container text-white flex flex-col justify-center items-center max-w-screen-lg mx-auto min-h-screen relative p-5 ">
 
                 {data.map((data, index) => (

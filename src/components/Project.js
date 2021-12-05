@@ -79,7 +79,7 @@ function Project() {
     ]
     return (
         <div id="projects" className="container project-container max-w-screen-xl mx-auto flex flex-col justify-center items-center min-h-screen text-white p-5 pt-20">
-            <div className="text-xl text-yellow-400 mb-8">My Projects</div>
+            <div className="text-xl text-yellow-400 mb-8 animate-pulse">My Projects</div>
             <div className="project-filter flex flex-wrap justify-center items-center gap-3 text-black text-lg mb-5">
                 <div className={miniSeleted + " py-2 px-5 rounded font-semibold cursor-pointer"} onClick={(e) => {
                     setProjectType("mini")
