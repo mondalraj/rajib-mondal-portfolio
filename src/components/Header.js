@@ -9,8 +9,8 @@ function Header() {
                     transition={{ duration: 0.5 }} className="header-content md:pl-10 flex flex-col items-center md:items-start space-y-5">
                     <div className="text-xl text-black bg-yellow-400 w-max py-0.5 px-6 rounded">Web Developer</div>
                     <div className="flex md:flex-col lg:flex-row">
-                        <div className="text-3xl md:text-5xl font-semibold w-max">Also a Software&#160;</div>
-                        <div className="text-3xl md:text-5xl font-semibold text-yellow-400 typewriter"> Engineer.</div>
+                        <div className="text-2xl md:text-5xl font-semibold w-max">Also a Software&#160;</div>
+                        <div className="text-2xl md:text-5xl font-semibold text-yellow-400 typewriter"> Engineer.</div>
                     </div>
 
                     <div className="text-lg md:text-xl w-5/6 tracking-wider leading-7 md:pt-5 pb-2 md:text-left text-justify">I can design aesthetic websites, write easy to understand code, optimize the code and sometimes solve DSA problems.</div>

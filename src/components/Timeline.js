@@ -25,7 +25,7 @@ function Timeline() {
         {
             name: "Hacktoberfest Contributor",
             company: "Digital Ocean",
-            description: "I have successfully merged 10+ Pull Requests and have contributed in 5 projects where I have tried to make their product more optized and useful.",
+            description: "I have successfully merged 10+ Pull Requests and have contributed in 5 projects where I have tried to make their product more optimized and useful.",
             date: "Oct'2021",
             link: {
                 url: "https://dev.to/mondalraj",

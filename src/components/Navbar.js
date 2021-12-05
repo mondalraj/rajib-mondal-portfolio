@@ -46,7 +46,7 @@ const Navbar = () => {
     const desktopNavbar = (
         <div className="sticky top-0 left-0 right-0 z-10" style={{ backgroundColor: "#171717" }}>
             <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
-                <a href="/" className="navbar-logo text-2xl font-semibold tracking-wider">
+                <a href="https://mondalraj.github.io/rajib-mondal-portfolio/" className="navbar-logo text-2xl font-semibold tracking-wider">
                     <span className="text-yellow-400">Rajib </span>
                     <span>Mondal</span>
                 </a>
@@ -104,7 +104,7 @@ const Navbar = () => {
         <>
             <div className="sticky top-0 left-0 right-0 z-10" style={{ backgroundColor: "#171717" }}>
                 <div className="p-5 navbar-container max-w-screen-xl mx-auto flex justify-between items-center h-16 text-white">
-                    <a href="/" className="navbar-logo text-2xl font-semibold tracking-wider">
+                    <a href="https://mondalraj.github.io/rajib-mondal-portfolio/" className="navbar-logo text-2xl font-semibold tracking-wider">
                         <span className="text-yellow-400">Rajib </span>
                         <span>Mondal</span>
                     </a>
