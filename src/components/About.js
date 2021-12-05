@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import '../styles/about.css'
 
 const squareVariants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
     hidden: { opacity: 0, y: 100 }
 };
 
@@ -12,6 +12,7 @@ function About() {
 
     const controls = useAnimation();
     const [ref, inView] = useInView();
+    
     useEffect(() => {
         if (inView) {
             controls.start("visible");
@@ -22,7 +23,7 @@ function About() {
         <motion.div ref={ref}
             animate={controls}
             initial="hidden"
-            variants={squareVariants} id="about" className="container about-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white flex-col-reverse p-5 pt-20 md:flex-row md:gap-10 md:p-10">
+            variants={squareVariants} id="about" className="container about-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white flex-col-reverse p-5 pt-40 md:flex-row md:gap-10 md:p-10">
             <div className="service-tags w-full flex flex-col gap-2 py-6">
                 <div className="services-blocks flex flex-col justify-center items-center w-full h-20 rounded" style={{ backgroundColor: "#171717" }}>
                     <div className="text-xl font-semibold tracking-wide text-yellow-400">Design</div>
