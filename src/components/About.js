@@ -5,14 +5,14 @@ import '../styles/about.css'
 
 const squareVariants = {
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: 100 }
+    hidden: { opacity: 0, y: 200 }
 };
 
 function About() {
 
     const controls = useAnimation();
     const [ref, inView] = useInView();
-    
+
     useEffect(() => {
         if (inView) {
             controls.start("visible");

@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 import { Helmet } from 'react-helmet';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Project />
       <Timeline />
       <Contact />
+      <Footer />
     </div>
   );
 }

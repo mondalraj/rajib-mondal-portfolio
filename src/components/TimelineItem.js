@@ -1,6 +1,28 @@
+import React, { useEffect, useRef, useState } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const squareVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 100 }
+};
+
 const TimelineItem = ({ data }) => {
+
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
+
     return (
-        <div className="timeline-item relative">
+        <motion.div ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={squareVariants} className="timeline-item relative">
             <div className="timeline-item-content text-md md:text-lg">
                 <div className="timeline-date font-semibold tracking-wide pb-3 md:text-md">{data.date}</div>
                 <div className="timeline-box">
@@ -12,7 +34,7 @@ const TimelineItem = ({ data }) => {
             </div>
             <div className="circle"></div>
 
-        </div>
+        </motion.div>
     )
 }
 

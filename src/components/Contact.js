@@ -1,7 +1,24 @@
-import { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from 'emailjs-com'
 import '../styles/contact.css'
+
+const squareVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 200 }
+};
+
 function Contact() {
+
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
 
     const [emailField, setEmailField] = useState('');
     const [messageField, setMessageField] = useState('');
@@ -20,7 +37,10 @@ function Contact() {
         });
     }
     return (
-        <div id="contact" className="container contact-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white p-5 pt-20">
+        <motion.div ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={squareVariants} id="contact" className="container contact-container max-w-screen-xl mx-auto flex justify-center items-center min-h-screen text-white p-5 pt-40">
             <div className="get-in-touch w-full p-5 rounded-md md:max-w-3xl" style={{ backgroundColor: "#171717" }}>
                 <div className="text-yellow-400 text-2xl md:text-3xl font-semibold tracking-wide pb-4 animate-pulse">Get In Touch!</div>
                 <div className="text-lg">
@@ -38,7 +58,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

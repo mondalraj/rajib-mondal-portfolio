@@ -55,8 +55,8 @@ const Navbar = () => {
                     <a href="#skills" className={skill + " text-lg tracking-wider"} onClick={() => changeNavColor(2)} >Skills</a>
                     <a href="#projects" className={project + " text-lg tracking-wider"} onClick={() => changeNavColor(3)} >Projects</a>
                     <a href="#experience" className={experience + "  text-lg tracking-wider"} onClick={() => changeNavColor(4)} >Experience</a>
-                    <a href="#contact" className={contact + " navbar-contactButton text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded"} onClick={()=> changeNavColor(5)}>
-                      Contact
+                    <a href="#contact" className={contact + " navbar-contactButton text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded"} onClick={() => changeNavColor(5)}>
+                        Contact
                     </a>
                 </div>
             </div>

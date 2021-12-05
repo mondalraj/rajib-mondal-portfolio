@@ -48,6 +48,10 @@ function Skills() {
             power: 90
         },
         {
+            name: "Gatsby",
+            power: 70
+        },
+        {
             name: "Firebase",
             power: 70
         },
@@ -67,7 +71,7 @@ function Skills() {
 
     const squareVariants = {
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, y: 100 },
+        hidden: { opacity: 0, y: 200 },
 
     };
 
@@ -101,13 +105,13 @@ function Skills() {
                             <div className="core-technical-skills-bar w-full flex flex-col py-1.5">
                                 <div className="skill-details flex justify-between py-1 tracking-wide">
                                     <div>{skill.name}</div>
-                                    <div>{skill.power}%</div>
+                                    <div className="text-gray-400">{skill.power}%</div>
                                 </div>
                                 <div className="skill-bar w-full h-2.5 rounded bg-white">
 
 
                                     <motion.div initial={{ width: 0 }} animate={skillAnimation}
-                                        variants={skillVariant} transition={{ delay: 0.5, duration: 3 }} className="skill-percent h-full bg-yellow-400 rounded "
+                                        variants={skillVariant} transition={{ delay: 1, duration: 3 }} className="skill-percent h-full bg-yellow-400 rounded "
                                     ></motion.div>
                                 </div>
                             </div>
@@ -126,11 +130,11 @@ function Skills() {
                             <div className="core-technical-skills-bar w-full flex flex-col py-1.5">
                                 <div className="skill-details flex justify-between py-1 tracking-wide">
                                     <div>{skill.name}</div>
-                                    <div>{skill.power}%</div>
+                                    <div className="text-gray-400">{skill.power}%</div>
                                 </div>
                                 <div className="skill-bar w-full h-2.5 rounded bg-white">
                                     <motion.div initial={{ width: 0 }} animate={skillAnimation}
-                                        variants={skillVariant} transition={{ delay: 0.5, duration: 3 }} className="skill-percent h-full bg-yellow-400 rounded " style={{
+                                        variants={skillVariant} transition={{ delay: 1, duration: 3 }} className="skill-percent h-full bg-yellow-400 rounded " style={{
                                             maxWidth: `${skill.power}%`
                                         }}></motion.div>
                                 </div>
