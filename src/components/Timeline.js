@@ -13,13 +13,13 @@ function Timeline() {
         {
             name: "Open Source Contributor",
             company: "GirlScript Summer of Code",
-            description: "I Have paricipated in GSSOC'21 and it was my first open source experience, I have created a lot of connections there, meet a lot of like minded individuals.",
+            description: "I Have participated in GSSOC'21 and it was my first open source experience, I have created a lot of connections there, meet a lot of like-minded individuals.",
             date: "Mar'2021 - May'2021"
         },
         {
             name: "GDSC Core Team Member",
             company: "Google Student Developer Club' ADGITM",
-            description: "Based on my Front-End skills I was selected for the Core technical Team where we build projects with other members, organise events on regular basis to increase the coding culture of our college.",
+            description: "Based on my Front-End skills I was selected for the Core technical Team where we build projects with other members, organize events on regular basis to increase the coding culture of our college.",
             date: "Sept'2021 - Present"
         },
         {

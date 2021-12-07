@@ -10,3 +10,19 @@
   color: black;
   transition: all 0.3s ease;
 }
+
+.view-resume {
+  background-color: #c0c0c0 !important;
+  box-shadow: 2px 5px 8px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 5px 8px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 5px 8px 3px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
+}
+
+.view-resume:hover {
+  background-color: #f1c21b !important;
+  box-shadow: 2px 8px 13px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 8px 13px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 8px 13px 5px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
+}

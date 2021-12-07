@@ -20,9 +20,9 @@ function Project() {
         }
     }, [controls, inView]);
 
-    const [projectType, setProjectType] = useState("mini");
-    const [miniSeleted, setMiniSelected] = useState("bg-yellow-400")
-    const [frontendSeleted, setFrontendSelected] = useState("bg-gray-200")
+    const [projectType, setProjectType] = useState("frontend");
+    const [miniSeleted, setMiniSelected] = useState("bg-gray-200")
+    const [frontendSeleted, setFrontendSelected] = useState("bg-yellow-400")
     const [fullstackSeleted, setFullstackSelected] = useState("bg-gray-200")
 
     const projectList = [
@@ -37,17 +37,7 @@ function Project() {
             },
             type: "frontend"
         },
-        {
-            name: "Code Monks App (Hackathon)",
-            tags: ["React js", "Bootstrap", "Gatsby", "Node js"],
-            level: "Intermediate",
-            links: {
-                github: "https://github.com/mondalraj/Code-Monks",
-                live: "https://codemonks.netlify.app/",
-                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/code-monks.png?raw=true"
-            },
-            type: "frontend"
-        },
+
         {
             name: "DSC ADGITM Website",
             tags: ["React js", "Bootstrap", "Gatsby", "Framer Motion"],
@@ -65,7 +55,7 @@ function Project() {
             level: "Intermediate",
             links: {
                 github: "https://github.com/mondalraj/mojlo-app",
-                live: "",
+                live: "http://mojlo-app.vercel.app/",
                 image: "https://github.com/mondalraj/portfolio-project-images/blob/master/mojlo-app.png?raw=true"
             },
             type: "frontend"
@@ -122,6 +112,17 @@ function Project() {
                 github: "https://github.com/mondalraj/netflix-clone",
                 live: "https://clone-projects-ec1aa.web.app/",
                 image: "https://github.com/mondalraj/portfolio-project-images/blob/master/netflix-clone.png?raw=true"
+            },
+            type: "frontend"
+        },
+        {
+            name: "Code Monks App (Hackathon)",
+            tags: ["React js", "Bootstrap", "Gatsby", "Node js"],
+            level: "Intermediate",
+            links: {
+                github: "https://github.com/mondalraj/Code-Monks",
+                live: "https://codemonks.netlify.app/",
+                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/code-monks.png?raw=true"
             },
             type: "frontend"
         },
