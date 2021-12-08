@@ -53,7 +53,7 @@ function About() {
                         <p>I am very passionate learner and love to implement my learnings in my projects.</p>
                         <p>I love to teach and distribute my knowledge to others as by teaching I get to learn about some new amazing stuff.</p>
                     </div>
-                    <a href="https://drive.google.com/file/d/1OIbUT1eWxd8lyv2fqff7HKBbcIkCqEec/view?usp=sharing" className=" view-resume text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded" target="_blank" >
+                    <a href="https://drive.google.com/file/d/1VALVJcMM4UfYN8ir4aH4ay1YioiT_L2m/view?usp=sharing" className=" view-resume text-lg font-semibold bg-gray-300 py-1 px-4 text-black rounded" target="_blank" >
                         View Resume
                     </a>
                 </div>
