@@ -21,8 +21,11 @@ function Header() {
                 </motion.div>
                 <motion.div initial={{ x: "100px", opacity: 0.5 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.5 }} className="header-image -mt-3 w-9/12 sm:w-3/5 md:w-full">
+                    transition={{ duration: 0.5 }} className="header-image relative -mt-3 w-9/12 sm:w-3/5 md:w-full">
                     <img style={{ width: "800px" }} src="heroImage.png" alt="Image of Rajib Mondal" />
+                    <img className="absolute top-28 lg:top-64 left-5 w-20 lg:w-28 lg:left-14 animate-pulse lg:animate-bounce" src="https://www.pngkit.com/png/full/66-667065_js-club-new-balance-png-logo-node-js.png" />
+                    <img className="absolute top-8 right-16 w-14 lg:w-20 lg:right-28 animate-pulse lg:animate-bounce" src="https://img.icons8.com/color/96/000000/react-native.png" />
+                    <img className="absolute bottom-20 right-5 w-14 lg:w-20 lg:right-14 animate-pulse lg:animate-bounce" src="https://img.icons8.com/color/96/000000/javascript--v1.png" />
                 </motion.div>
 
             </div>
@@ -40,7 +43,7 @@ const styles = {
         padding: 8,
         paddingRight: 30,
         paddingLeft: 30,
-        fontSize: 18
+        fontSize: 18,
     }
 }
 

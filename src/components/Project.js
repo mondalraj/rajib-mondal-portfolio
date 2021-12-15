@@ -26,18 +26,18 @@ function Project() {
     const [fullstackSeleted, setFullstackSelected] = useState("bg-gray-200")
 
     const projectList = [
+
         {
-            name: "Portfolio Website",
-            tags: ["React js", "CSS", "Tailwind CSS", "Framer Motion"],
+            name: "Code Monks App (Hackathon)",
+            tags: ["React js", "Bootstrap", "Gatsby", "Node js"],
             level: "Intermediate",
             links: {
-                github: "https://github.com/mondalraj/rajib-mondal-portfolio",
-                live: "https://mondalraj.github.io/rajib-mondal-portfolio/",
-                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/portfolio-website.png?raw=true"
+                github: "https://github.com/mondalraj/Code-Monks",
+                live: "https://codemonks.netlify.app/",
+                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/code-monks.png?raw=true"
             },
             type: "frontend"
         },
-
         {
             name: "DSC ADGITM Website",
             tags: ["React js", "Bootstrap", "Gatsby", "Framer Motion"],
@@ -115,17 +115,7 @@ function Project() {
             },
             type: "frontend"
         },
-        {
-            name: "Code Monks App (Hackathon)",
-            tags: ["React js", "Bootstrap", "Gatsby", "Node js"],
-            level: "Intermediate",
-            links: {
-                github: "https://github.com/mondalraj/Code-Monks",
-                live: "https://codemonks.netlify.app/",
-                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/code-monks.png?raw=true"
-            },
-            type: "frontend"
-        },
+
         {
             name: "SiteMania Landing Page",
             tags: ["HTML", "CSS"],
@@ -158,6 +148,17 @@ function Project() {
                 image: "https://github.com/mondalraj/portfolio-project-images/blob/master/tour-travel-website.png?raw=true"
             },
             type: "mini"
+        },
+        {
+            name: "Portfolio Website",
+            tags: ["React js", "CSS", "Tailwind CSS", "Framer Motion"],
+            level: "Intermediate",
+            links: {
+                github: "",
+                live: "https://mondalraj.github.io/rajib-mondal-portfolio/",
+                image: "https://github.com/mondalraj/portfolio-project-images/blob/master/portfolio-website.png?raw=true"
+            },
+            type: "frontend"
         },
 
     ]
