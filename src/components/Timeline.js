@@ -15,7 +15,7 @@ function Timeline() {
       company: "DataPitcher",
       description:
         "Worked as MERN developer. Developed a full-fledged Authentication System. Integrated Send Grid API to send emails to clients on their first signup. Implemented Razorpay Payment Gateway to accept payments from clients. Developed Light Weight UI and Complex Animations using Tailwind CSS.",
-      date: "Dec'2021 - Mar'2021",
+      date: "Dec'2021 - Mar'2022",
     },
     {
       name: "Full Stack Developer Mentor",
